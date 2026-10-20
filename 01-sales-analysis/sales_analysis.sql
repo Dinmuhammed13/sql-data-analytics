@@ -52,3 +52,16 @@ SELECT
 FROM sales
 GROUP BY YEAR(order_date), MONTH(order_date)
 ORDER BY sales_year, sales_month;
+WITH ProductRevenue AS (
+    SELECT
+        product,
+        SUM(quantity * price) AS revenue
+    FROM sales
+    GROUP BY product
+)
+SELECT
+    product,
+    revenue,
+    RANK() OVER (ORDER BY revenue DESC) AS revenue_rank
+FROM ProductRevenue
+ORDER BY revenue_rank;
