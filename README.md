@@ -36,3 +36,15 @@ Sample sales data containing order dates, products, categories, quantities, and 
 - Aggregate functions: SUM
 - GROUP BY and ORDER BY
 - Date functions: YEAR and MONTH
+
+### Key Findings
+- Total revenue: 4,040.00
+- Electronics generated 3,350.00 in revenue.
+- Accessories generated 690.00 in revenue.
+- Laptop was the top product by revenue, generating 2,250.00.
+- Monthly revenue decreased from 1,760.00 in January to 840.00 in March.
+
+### Advanced SQL Skills
+- Conditional logic with CASE WHEN
+- Common Table Expressions (CTEs)
+- Window functions with RANK()
